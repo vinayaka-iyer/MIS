@@ -1,5 +1,6 @@
 const express = require('express');
 const connectDB = require('./config/db');
+var cors = require('cors');
 
 // routes
 const students = require('./routes/api/students');
@@ -8,6 +9,9 @@ const app = express();
 
 // connect Database
 connectDB();
+
+// cors
+app.use(cors({ origin: true, credentials: true }));
 
 // Middleware
 app.use(express.json({ extended: false }));

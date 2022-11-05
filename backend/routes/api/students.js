@@ -30,11 +30,12 @@ router.get('/:id', (req, res) => {
 // @description add/save student
 // @access Admin
 router.post('/', (req, res) => {
+  console.log(req.body);
   Student.create(req.body)
     .then((student) => res.json({ msg: 'Student added successfully' }))
-    .catch((err) =>
-      res.status(400).json({ error: 'Unable to add this Student' })
-    );
+    .catch((err) => {
+      res.status(400).json({ error: 'Unable to add this Student' });
+    });
 });
 
 // @route PUT api/students/:id

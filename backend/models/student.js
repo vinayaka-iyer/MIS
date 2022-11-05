@@ -1,30 +1,25 @@
 const mongoose = require('mongoose');
 
 const StudentSchema = new mongoose.Schema({
-  AdmNo: {
-    type: Number,
-    required: true,
-    unique: true,
-  },
-  Name: {
-    type: String,
-    required: true,
-  },
-  Email: {
-    type: String,
-    required: true,
-  },
-  Year: {
+  admno: {
     type: Number,
     required: true,
   },
-  Section: {
+  name: {
     type: String,
     required: true,
   },
-  RecordDate: {
-    type: Date,
-    default: Date.now,
+  email: {
+    type: String,
+    required: true,
+  },
+  year: {
+    type: Number,
+    required: true,
+  },
+  section: {
+    type: String,
+    required: true,
   },
 });
 
