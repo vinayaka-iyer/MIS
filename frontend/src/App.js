@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 
 import CreateStudent from './components/CreateStudent';
@@ -11,12 +11,10 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Routes>
-          <Route exact path='/' element={<ShowStudentList />} />
-          <Route path='/create-student' element={<CreateStudent />} />
-          <Route path='/edit-student/:id' element={<UpdateStudentInfo />} />
-          <Route path='/show-student/:id' element={<ShowStudentDetails />} />
-        </Routes>
+        <Route exact path='/' component={ShowStudentList} />
+        <Route path='/create-student' component={CreateStudent} />
+        <Route path='/edit-student/:id' component={UpdateStudentInfo} />
+        <Route path='/show-student/:id' component={ShowStudentDetails} />
       </Router>
     );
   }
