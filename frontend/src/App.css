@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
 .App {
   text-align: center;
 }
@@ -9,7 +15,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #dcd6f7;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -33,25 +39,25 @@
 }
 
 .CreateStudent {
-  background-color: #2c3e50;
+  background-color: #4e4c67;
   min-height: 100vh;
   color: white;
 }
 
 .ShowStudentDetails {
-  background-color: #2c3e50;
+  background-color: #4e4c67;
   min-height: 100vh;
   color: white;
 }
 
 .UpdateStudentInfo {
-  background-color: #2c3e50;
+  background-color: #4e4c67;
   min-height: 100vh;
   color: white;
 }
 
 .ShowStudentList {
-  background-color: #2c3e50;
+  background-color: #4e4c67;
   height: 100%;
   width: 100%;
   min-height: 100vh;
@@ -70,10 +76,19 @@
 
 .card-container {
   width: 250px;
-  border: 1px solid rgba(0, 0, 0.125);
+  border: 1px solid #ffc107;
   margin: 0 auto;
   border-radius: 5px;
   overflow: hidden;
+}
+
+.card-container a {
+  color: white;
+}
+
+.card-container a:hover {
+  color: #985f6f;
+  text-decoration: none;
 }
 
 .desc {
