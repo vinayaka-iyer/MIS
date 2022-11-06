@@ -1,3 +1,4 @@
 {
-  "mongoURI": "mongodb+srv://admin:adm123@cluster0.jscfrbl.mongodb.net/?retryWrites=true&w=majority"
+  "mongoURI": "mongodb+srv://new_user:hello123@cluster0.km9qoac.mongodb.net/Sessions?retryWrites=true&w=majority"
 }
+
