@@ -86,8 +86,8 @@ app.post('/loginadmin', async (req, res) => {
     return res.redirect('http://localhost:3000/');
   }
 });
-app.get('/dashboard', isAuth, (req, res) => {
-  res.render('dashboard');
+app.get('/', isAuth, (req, res) => {
+  res.render('registeradmin');
 });
 
 // use Routes

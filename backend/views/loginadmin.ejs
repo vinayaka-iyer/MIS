@@ -9,21 +9,28 @@
 </head>
 <body>
     <form action="/loginadmin"method=POST>
-        <div class="form-group">
+      <br>
+        <div class="form-group mx-auto" style="width: 300px;">
           <label for="email">Email address</label>
           <input type="email" class="form-control"name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
-        <div class="form-group">
+        <div class="form-group mx-auto" style="width: 300px;">
           <label for="password">Password</label>
           <input type="password" class="form-control"name="password" id="exampleInputPassword1" placeholder="Password">
         </div>
-        <div class="form-check">
+        <div class="form-check mx-auto" style="width: 300px;">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <label class="form-check-label" for="exampleCheck1">Verify user</label>
         </div>
-        <button type="submit" class="btn btn-primary">Login</button>
+        <br>
+        <div class="mx-auto" style="width: 300px;">
+          <button type="submit" class="btn btn-primary">Login</button>
+        </div>
       </form>
-      <a href="/register">Register</a>
+      <div class="mx-auto" style="width: 300px;">
+        <a href="/register">Register</a>
+      </div>
+      
 </body>
 </html>

@@ -9,27 +9,32 @@
 </head>
 <body>
     <form action="/registeradmin" method="POST">
-        <div class="form-group">
+        <div class="form-group mx-auto " style="width: 300px">
+          <br>
             <label for="username">UserName of admin</label>
             <input type="text"name="username" class="form-control" id="exampleInputUser1" placeholder="Username">
           </div>
 
-        <div class="form-group">
+        <div class="form-group mx-auto" style="width: 300px">
           <label for="email">Email address</label>
           <input type="email" class="form-control" id="exampleInputEmail1"name="email" aria-describedby="emailHelp" placeholder="Enter email">
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
-        <div class="form-group">
+        <div class="form-group mx-auto" style="width: 300px">
           <label for="password">Password</label>
           <input type="password" class="form-control"name="password" id="exampleInputPassword1" placeholder="Password">
         </div>
-        <div class="form-check">
+        <div class="form-check mx-auto" style="width: 300px">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <label class="form-check-label" for="exampleCheck1">Verify user</label>
         </div>
+        <br>
+        <div class="mx-auto" style="width: 300px;">
         <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
       </form>
-      <a href="/Login">Login</a>
+      <div class="mx-auto" style="width: 300px;"><a href="/loginadmin">Login</a>
+</div>
     
 </body>
 </html>
